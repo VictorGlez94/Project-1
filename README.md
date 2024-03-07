@@ -1,4 +1,5 @@
-# Pádel shop
+# PadelFusion
+![](assets/Logo.png)
 
 Bienvenido/a a la página de productos de pádel. Este proyecto es un sitio web de frontend diseñado para mostrar una variedad de productos relacionados con el pádel. Esta página web está destinada a ser intuitiva y atractiva para los usuarios interesados en el pádel y sus productos asociados.
 
