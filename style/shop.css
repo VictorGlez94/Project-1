@@ -1,0 +1,111 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    /* background-image: url(/assets/fondo-shop.jpg); */
+    background-color: #008738;
+    height: 25vh;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    background-color: #faedd1;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+}
+
+select{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #202020;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+label {
+    padding-right: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(25% - 20px);
+    text-align: center;
+    margin: 15px;
+}
+
+.product > div {
+    margin-bottom: 15px;
+}
+
+.name {
+    height: 36px;
+}
+
+.price {
+    line-height: 25px;
+    height: 25px;
+    background-color: #faedd1;
+    text-align: center;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.image:hover {
+    transform: scale(1.4);
+}
+
+.image:active {
+    transform: scale(1.4);
+}
+
+h1 {
+    margin-left: 2%;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    margin-left: 2%;
+    font-size: 18px;
+    color: white;
+    font-style: italic;
+}
+
+.cartButton {
+    text-decoration:none; 
+    text-align:center; 
+    padding: 8px 28px; 
+    border:solid 1px #000000; 
+    border-radius: 14px; 
+    font:16px "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    font-weight:bold; 
+    color:#ffffff; 
+    background:#008738; 
+}

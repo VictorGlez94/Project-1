@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadelFusion | La Mejor Tienda de Padel</title>
+    <script src="./src/script.js"></script>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/shop.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Tienda</h1>
+            <p>Compra las mejores palas, camisetas, tenis y más artículos en nuestra tienda online.</p>
+            <p>Disponemos de la mayor variedad de productos para jugadores de todos los niveles.</p>
+        </section>
+        <section class="filters">
+            <aside class="filter">
+                <div class="filter-category">
+                    <label for="categoria"><b>Categoría:</b></label>
+                    <select id="categoria">
+                        <option value="todos">Todos</option>
+                        <option value="palas">Palas</option>
+                        <option value="ropa">Ropa</option>
+                        <option value="zapatillas">Zapatillas</option>
+                    </select>
+                </div>
+                <div class="filtro-price">
+                    <label for="rango-precio"><b>Precio:</b></label>
+                    <span id="precio-minimo">0€</span>
+                    <input type="range" min="0" max="200" value="50" class="slider" id="rango-precio">
+                    <span id="precio-maximo">200€</span>
+                </div>
+            </aside>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image"><img src="/assets/palas/nox_ml10_pro.webp" alt=""></div>
+                <div class="name">NOX ML10 PRO CUP CORP</div>
+                <div class="price">79,94€</div>
+                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+            </div>
+            <div class="product">
+                <div class="image"><img src="/assets/palas/bullpadel_vertex_03.webp" alt=""></div>
+                <div class="name">BULLPADEL VERTEX 03</div>
+                <div class="price">144,95€</div>
+                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+            </div>
+            <div class="product">
+                <div class="image"><img src="/assets/palas/nox_ultimate_power.webp" alt=""></div>
+                <div class="name">NOX ULTIMATE POWER LTD CARBON</div>
+                <div class="price">112,95€</div>
+                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+            </div>
+            <div class="product">
+                <div class="image"><img src="/assets/palas/INTRUDER.webp" alt=""></div>
+                <div class="name">ORYGEN INTRUDER</div>
+                <div class="price">15,95€</div>
+                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+            </div>
+            <div class="product">
+                <div class="image"><img src="/assets/palas/bullpadel_vertex_03_comfort.webp" alt=""></div>
+                <div class="name">BULLPADEL VERTEX 03 COMFORT</div>
+                <div class="price">98,95€</div>
+                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+            </div>
+            <div class="product">
+                <div class="image"><img src="/assets/palas/adidas_adipower_multiweight.webp" alt=""></div>
+                <div class="name">ADIDAS ADIPOWER MULTIWEIGHT</div>
+                <div class="price">158,95€</div>
+                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
