@@ -8,15 +8,15 @@ Bienvenido/a a la página de productos de pádel. Este proyecto es un sitio web 
 - **Filtrado y Búsqueda:** Permite a los usuarios filtrar y buscar productos por categoría, marca, precio, etc.
 - **Detalles del Producto:** Proporciona información detallada sobre cada producto, incluyendo imágenes, descripción, precio, etc.
 - **Carrito de Compras:** Permite a los usuarios agregar productos al carrito y proceder al proceso de compra.
-- **Autenticación de Usuarios:** Posibilidad de registro e inicio de sesión para los usuarios.
-
+- **Contact us:** Posibilidad de cumplimentar un formulario de registro
+- **About us:** Hablar un poco sobre nosotros y nuestra visión con este proyecto
+- 
 ## Tecnologías Utilizadas
 
 - **HTML5:** Para la estructura del sitio web.
 - **CSS3:** Para el diseño y estilos.
 - **JavaScript:** Para la interactividad y funcionalidades dinámicas.
 - **Git:** Para el control de versiones.
-- **GitHub Pages:** Para la implementación del sitio web.
 
 ## Instalación
 
