@@ -12,6 +12,7 @@ main {
     overflow: scroll;
 }
 
+
 .navbar {
     width: 100%;
     margin: 0px;
@@ -41,11 +42,10 @@ main {
     transition: 2s;
 }
 
-.tabs>h3 {
+.tabs> * {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /* padding-right: 10px; */
     color: rgb(57, 23, 206);
-    justify-content: space-between;
 }
 
 .home-landing-page {
@@ -64,12 +64,17 @@ main {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    width: 80%;
 }
 
 .home-landing-page h1 {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 20px;
+}
+
+.padelfusion-main{
+    color: blue;
 }
 
 .home-landing-page p {
@@ -102,26 +107,58 @@ main {
     background-size: cover;
     width: 100%;
     height: 800px;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
+}
+.title-shop-landing-page {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-shop-landing-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+}
+.goto-shop {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.goto-shop p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.goto-shop>* {
+    width: 80%;
 }
 
 .slider {
-    width: 80%;
+    width: 500px;
     height: 500px;
     max-width: 700px;
     overflow: hidden;
-    position: relative;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
     gap: 20px;
 }
 
 .slide {
-    width: calc(100% / 3 - 20px);
+    width: 70%;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     overflow: hidden;
@@ -133,6 +170,19 @@ main {
     height: auto;
     /* background-size: cover; */
     border-radius: 10px 10px 0 0;
+}
+
+.contBtnsStyle{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    background-color: #09b;
+    border-radius: 10px;
+}
+.contBtnsStyle > *{
+    cursor: pointer;
 }
 
 .description {
@@ -156,12 +206,92 @@ main {
     background-color: #077;
 }
 
+
+/*
+********************************************************
+*/
 .blog-landing-page {
     background-image: url("../assets/picture_landing_page_blogs.jpg");
     background-size: cover;
     width: 100%;
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+
 }
+
+.blogs-title-landing-page{
+        font-size: 2.5em;
+            color: #218b17;
+            margin-bottom: 20px;
+}
+
+.blogs-container{
+    width: 80%;
+        display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+}
+.blog-post {
+    overflow: hidden;
+    width: 35%;
+    height: 400px;
+    background-image: url("../assets/picture-landing-page-aboutUs-contactUs.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+
+}
+
+.blog-background {
+    width: 100%;
+    height: 100%;
+}
+
+.blog-content {
+    position: relative;
+    top: 70%;
+    font-weight: bold;
+    color: #fff;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+/* Estilos para la ventana emergente */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    z-index: 2;
+    display: none;
+}
+
+.popup-content {
+    color: #fff;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+/*
+********************************************************
+*/
 
 .aboutus-contactus-landing-page {
     background-image: url("../assets/picture-landingPage-contact-us.jpg");

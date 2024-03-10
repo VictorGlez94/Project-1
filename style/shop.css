@@ -10,7 +10,7 @@ main {
     background-size: cover;
     height: 25vh;
     margin-bottom: 5px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     text-align: center;
 }
 
