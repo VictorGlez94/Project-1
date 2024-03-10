@@ -1,0 +1,145 @@
+/*ABOUT US*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+h1 {font-size: 3.5em;}
+
+h2 {font-size: 2.7em;}
+
+h3 {font-size: 2em;}
+
+p {font-size: 1.25em;}
+
+#hero{
+
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(/assets/historia-del-padel.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+
+#hero h2 {
+    color: #ffffff;
+    font-size: 80px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#about-us .container {
+    text-align: center;
+    
+}
+
+
+h4 {
+    margin: none;
+    color: rgb(30, 255, 0);
+    font-size: 40px;
+    text-align: center;
+}
+ 
+#about-us{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+#about-us .container {
+       margin: 0;
+}
+
+#about-us h4 {
+     font-size: 50px;
+
+}
+
+#about-us p {
+  
+    
+            text-align: justify;
+            line-height: 1.5;
+            padding-right: 90px;
+            max-width: 1300px;
+            margin: 0px auto;
+            padding: 60px;
+            font-size: 20px;
+            color: #ffffff;
+    
+    
+        }
+
+#about-us .who-we-are {
+    background-position: center center;
+    background-size: cover;
+    padding: 0px 0px;
+    margin: 0;
+    border-radius: 0px;
+}
+
+.who-we-are:first-child {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(/assets/pelotas2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+}
+
+.story:nth-child(2) {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(/assets/nuestrahisto.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+
+.choose-us:nth-child(3) {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(/assets/FOTO1_SALTANDO.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+}

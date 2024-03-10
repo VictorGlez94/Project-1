@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadelFusion | La Mejor Tienda de Padel</title>
+    <script src="/src/script.js"></script>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+
+        <form action="" method="post" class="myFormStyle" onsubmit="return validarFormulario()">
+            
+            <div class="title">
+                <p>Formulario de contacto</p>
+            </div>
+
+            <div class="myInputs">
+                <label for="Asunto">Asunto:</label> <br>   
+                <select id="Asunto" name="Asunto" id="asunto" required>
+                    <option value=" ">-</option>
+                    <option value="Customer Support">Atención al cliente</option>
+                    <option value="Post-sales Service">Servicio post-venta</option>
+                </select>
+            </div>
+
+            <div class="myInputs">
+                <label for="email">Email: </label> <br>
+                <input type="email" name="email" id="email" required />
+            </div>
+
+        <div class="myInputs">
+            <label for="asunto">Indícanos en qué podemos ayudarte: </label> <br>
+            <textarea name="asunto" id="asunto" oninput="autoresize(this)" style="width: 300px; height: 50px;" required></textarea> 
+        </div>
+            
+
+            <div class="myInputs">
+                <input type="submit" value="Enviar formulario" />
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="agreement" />
+                Estoy de acuerdo con los términos y condiciones
+
+            </div>
+
+        </form>
+
+        <p id="mensajeError" class="error-message"></p>
+
+        <script>
+        
+        function autoresize(textarea) {
+                    textarea.style.height = 'auto';
+                    textarea.style.height = (textarea.scrollHeight) + 'px';
+                }
+        </script>
+
+    </main>
+
+</body>
+
+</html>
