@@ -1,0 +1,166 @@
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.intro {
+    background-image: url(/assets/fondo-shop.png);
+    background-size: cover;
+    height: 25vh;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.category {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.category * {
+    display: flex;
+    background-color: #e7e6e6fb;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.category li {
+    display: flex;
+    justify-content: center;
+    border: solid;
+    border-radius: 10px;
+    border-color: #008738;
+    margin: 0px 15px 0px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-width: 1px;
+    background-color: #008738;
+}
+
+.category li:hover {
+    transform: scale(1.05);
+    border-color: rgb(0, 70, 4);
+}
+
+
+/* .category li:active {
+    background-color: #b61d1d;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+} */
+
+.filter {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    background-color: #faedd1;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+}
+
+label {
+    padding-right: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(20% - 20px);
+    text-align: center;
+    margin: 15px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 15px rgba(187, 182, 182, 0.911);
+}
+
+.product > div {
+    margin-bottom: 15px;
+}
+
+.name {
+    height: 36px;
+}
+
+.price {
+    line-height: 25px;
+    height: 25px;
+    background-color: #faedd1;
+    text-align: center;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin-right: 2%;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(0, 29, 4);
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+p {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    margin-left: 25%;
+    margin-right: 27%;
+}
+
+/* span {
+    background: none repeat scroll 0 0 #d0ffba11;
+} */
+
+.cartButton {
+    text-decoration:none; 
+    text-align:center; 
+    padding: 8px 28px; 
+    border:solid #000000; 
+    border-width: 1px;
+    border-radius: 14px; 
+    font:16px "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    font-weight: bold; 
+    color:#ffffff; 
+    background:#008738; 
+}
+
+.offer {
+    position: relative;
+    display: inline-block;
+}
+    
+.offer-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
