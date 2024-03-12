@@ -1,0 +1,140 @@
+/*ABOUT US*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+h1 {font-size: 56px;}
+
+h2 {font-size: 43.2px;}
+
+h3 {font-size: 32px;}
+
+h4 {font-size: 25px;}
+
+p {font-size: 18px;}
+
+#hero{
+
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 600px;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(/assets/historia-del-padel.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+#hero h2 {
+    color: #ffffff;
+    font-size: 80px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#about-us {
+    background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(/assets/nuestrahisto.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    padding: 100px;
+    
+}
+
+
+
+#about-us p{
+    
+    color: #ffffff;
+    text-align: justify;
+
+}
+
+#about-us h4 {
+
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    #hero {
+        height: 700px;
+        font-size: 60px;       
+    }
+
+    #hero h2{
+        font-size: 50px;
+
+    }
+
+    #about-us {
+        display: flex;
+        flex-direction: column;        
+        height: auto;       
+        padding:50px;       
+        gap: 0;
+        
+
+    }
+
+    #about-us h4
+    {
+        text-align: left;             
+        text-align: center;
+    }
+    #about-us p
+    {
+        text-align: left;
+        text-align: justify;
+    }
+} 
+
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    #hero {
+        height: 700px;
+        
+    }
+
+   
+    
+    #about-us {
+        display: flex ;
+        flex-direction: column;
+        height: auto;
+        padding: 50px;
+        gap: 0;
+    }
+    #about-us h4 {
+     text-align: left;
+     text-align: center;
+    }
+
+    #about-us p {
+     text-align: left;
+     text-align: justify;
+    }
+} 
