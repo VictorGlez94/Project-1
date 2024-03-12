@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     width: 100vw;
@@ -22,6 +24,7 @@ main {
     height: calc(50px + 1.5vw);
     background-image: linear-gradient(to right, rgb(8, 8, 7), rgb(9, 148, 21));
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -36,20 +39,63 @@ main {
 .tabs {
     width: 350px;
     margin-right: 25px;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .tabs>*:hover {
     transform: scale(1.1);
     transition: 2s;
 }
-
-.tabs> * {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    /* padding-right: 10px; */
-    color: rgb(57, 23, 206);
+/* .shop-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #09b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
+
+.shop-btn:hover {
+    background-color: #077;
+} */
+
+.tabs>* {
+    /* margin-top: 20px; */
+    /* padding: 10px 20px; */
+    background-color: #09b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-icon {
+    margin-right: 20px;
+    /* Ajusta el margen derecho según sea necesario */
+}
+
+.cart-icon img {
+    height: 30px;
+    /* Ajusta la altura según sea necesario */
+}
+
+.options-navbar {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+/*
+//////////////////////////////////END NAVBAR//////////////////////////////////
+*/
 
 .home-landing-page {
     background-image: url("../assets/hermes-rivera-newhL3aprGk-unsplash.jpg");
@@ -211,7 +257,7 @@ main {
 
 
 /*
-********************************************************
+//////////////////////////////////END SHOP PAGE//////////////////////////////////
 */
 .blog-landing-page {
     background-image: url("../assets/picture_landing_page_blogs.jpg");
@@ -314,8 +360,9 @@ main {
     color: #fff;
     cursor: pointer;
 }
+
 /*
-********************************************************
+//////////////////////////////////END BLOG/NEWS PAGE//////////////////////////////////
 */
 
 .aboutus-contactus-landing-page {
@@ -323,9 +370,59 @@ main {
     background-size: cover;
     /* position: relative; */
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 800px;
+    /* gap: 10% */
+
 }
+
+.aboutus-contactus-landing-page > *{
+    background-image: linear-gradient(to right, rgb(41, 202, 41), rgb(138, 161, 158));
+        border-radius: 5px;
+        width: 60%;
+        height: 60%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.test iframe{
+    /* background-color: aqua; */
+    border-radius: 5px;
+    width: 80%;
+    height: 400px;
+    justify-content: center;
+    border-color: #000000;
+    border-width: 5px;
+    border-style: dashed;
+
+}
+.test{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+
+.about-contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.about-contact-container>*:hover{
+    scale: calc(1.05);
+    transition: 0.3s;
+}
+/* 
+.contact-us {
+    background-color: aqua;
+    border-radius: 5px;
+    width: 25%;
+    height: 60%;
+} */
