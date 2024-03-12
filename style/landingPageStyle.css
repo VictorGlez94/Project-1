@@ -30,61 +30,42 @@ main {
 }
 
 
-.nav img {
-    height: 225%;
+.navbar img {
+    height: 50px;
     padding: 5px;
+    margin-left: 10px;
     object-fit: cover;
 }
 
 .tabs {
-    width: 350px;
-    margin-right: 25px;
+    width: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.tabs>*:hover {
+.tabs * {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-right: solid 2px;
+    border-color: #ffeea2;
+    font-weight: bold;
+    padding: 3px 25px 3px 0px;
+    transition: background-color 0.3s ease;
+}
+
+.tabs *:hover {
     transform: scale(1.1);
     transition: 2s;
 }
-/* .shop-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #09b;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.shop-btn:hover {
-    background-color: #077;
-} */
-
-.tabs>* {
-    /* margin-top: 20px; */
-    /* padding: 10px 20px; */
-    background-color: #09b;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    padding: 3px;
-    transition: background-color 0.3s ease;
-}
 
 .cart-icon {
-    margin-right: 20px;
-    /* Ajusta el margen derecho según sea necesario */
+    margin: 0 40px 0 20px;
+    border-right: 0;
 }
 
-.cart-icon img {
-    height: 30px;
-    /* Ajusta la altura según sea necesario */
-}
 
 .options-navbar {
     display: flex;
@@ -116,11 +97,7 @@ main {
     width: 80%;
 }
 
-.home-landing-page h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-}
+
 
 .padelfusion-main{
     color: blue;
@@ -426,3 +403,19 @@ main {
     width: 25%;
     height: 60%;
 } */
+
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(248, 248, 248, 0.781);
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #096E11;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(19, 19, 19);
+}
