@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PadelFusion | La Mejor Tienda de Padel</title>
-    <script src="../src/script.js"></script>
     <link rel="stylesheet" href="/style/landingPageStyle.css">
     <link rel="stylesheet" href="/style/shop.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
@@ -12,168 +11,221 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="../index.html"><img src="../assets/Logo.png" alt="padel-fusion"></a>
-            <div class="options-navbar">
-                <div class="tabs">
-                    <a href="../index.html" class="nav-btn">Home</a>
-                    <a href="../shop/shop.html" class="nav-btn">Tienda</a>
-                    <a href="../about/about.html" class="nav-btn">Sobre nosotros</a>
-                    <a href="../contact/contact.html" class="nav-btn">Contáctanos</a>
-        
+            <a href="/index.html"><img class="logo" src="/assets/Logo.png" alt="padel-fusion"></a>
+            <div class="tabs">
+                <a href="/shop/shop.html" class="nav-btn">Tienda</a>
+                <a href="/about/about.html" class="nav-btn">Sobre nosotros</a>
+                <a href="/contact/contact.html" class="nav-btn">Contáctanos</a>
+                <div class="shopping-bag">
+                    <img class="cart-icon" src="/assets/shopping-bag.png" alt="Carrito de compra">
+                    <span class="bag-number">0</span>
                 </div>
-                <div class="cart-icon">
-                    <img src="../assets/picture-shopping-cart-landing-page.png" alt="Carrito de compra">
-        
-                </div>
-            </div>
+            </div>                    
         </nav>
     </header>
     <main>
         <section class="intro">
-            <h1>PadelFusion Store</h1>
-            <p><span>Compra las mejores <b>palas</b>, <b>camisetas</b>, <b>zapatillas</b> y más artículos de pádel en nuestra tienda online.</span></p>
-            <p><span>¡Disponemos de la mayor variedad de productos al <b>mejor precio</b>!</span></p>
+                <h1>PadelFusion Store</h1>
+                <div>
+                    <p>Compra las mejores <b>palas</b>, <b>camisetas</b> y <b>zapatillas</b> de pádel en nuestra tienda online.</p>
+                    <p>¡Disponemos de la mayor variedad de productos al <b>mejor precio</b>!</p>
+                </div>
         </section>
-        <section class="category">
-            <ul>
-                <li>Todos</li>
-                <li>Palas</li>
-                <li>Zapatillas</li>
-                <li>Camisetas</li>
-            </ul>
-        </section>
-        <section class="filters">
-            <aside class="filter">
-                <div class="filtro-price">
-                    <label for="rango-precio"><b>Precio:</b></label>
-                    <span id="precio-minimo">0€</span>
-                    <input type="range" min="0" max="200" value="50" class="slider" id="rango-precio">
-                    <span id="precio-maximo">200€</span>
+        <section class="base">
+            <section class="filters">
+                <h3>Filtros:</h3>
+                <button id="sort-asc" class="filter1">Precio: Menor a Mayor</button>
+                <button id="sort-desc" class="filter1">Precio: Mayor a Menor</button>
+                <button id="sort-discount" class="filter1">Más rebajado</button>
+                <div class="filter-price">
+                    <span id="min-price">0€</span>
+                    <input type="range" min="0" max="200" value="200" id="slider">
+                    <span id="max-price">200€</span>
                 </div>
-            </aside>
-        </section>
-        <section class="products">
-            <div class="product" id="pala">
-                <div class="offer">
-                    <div class="image"><img src="/assets/palas/nox_ml10_pro.webp" alt=""></div>
-                    <div class="offer-label">-25%</div>
+            </section>
+            <section class="content">
+                <section class="category">
+                    <button id="todos" class="filter2">Todos</button>
+                    <button id="palas" class="filter2">Palas</button>
+                    <button id="zapatillas" class="filter2">Zapatillas</button>
+                    <button id="camisetas" class="filter2">Camisetas</button>
+                </section>
+                <hr>
+                <section class="products">
+                    <div class="product" id="pala">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/palas/nox_ml10_pro.webp" alt=""></div>
+                            <div class="offer-label">-25%</div>
+                        </div>
+                        <div class="name">NOX ML10 PRO CUP CORP</div>
+                        <div class="price">79.94€</div>
+                        <div><button class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="pala">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/palas/bullpadel_vertex_03.webp" alt=""></div>
+                            <div class="offer-label">-15%</div>
+                        </div>
+                        <div class="name">BULLPADEL VERTEX 03</div>
+                        <div class="price">144.95€</div>
+                        <div><button class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="pala">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/palas/nox_ultimate_power.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">NOX ULTIMATE POWER LTD CARBON</div>
+                        <div class="price">112.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="pala">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/palas/INTRUDER.webp" alt=""></div>
+                            <div class="offer-label">-50%</div>
+                        </div>
+                        <div class="name">ORYGEN INTRUDER</div>
+                        <div class="price">15.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="pala">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/palas/bullpadel_vertex_03_comfort.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">BULLPADEL VERTEX 03 COMFORT</div>
+                        <div class="price">98.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="pala">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/palas/adidas_adipower_multiweight.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">ADIDAS ADIPOWER MULTIWEIGHT</div>
+                        <div class="price">158.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="zapatilla">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/zapatillas/asics_pro_5_gris.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">ASICS GEL PRO 5 GRIS</div>
+                        <div class="price">47.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="zapatilla">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/zapatillas/joma_negro.webp" alt=""></div>
+                            <div class="offer-label">-40%</div>
+                        </div>
+                        <div class="name">JOMA T.SET NEGRO</div>
+                        <div class="price">20.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="zapatilla">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/zapatillas/asics_challenger_14.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">ASICS GEL CHALLENGER 14</div>
+                        <div class="price">84.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="zapatilla">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/zapatillas/asics_pro_5_azul.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">ASICS GEL PRO 5 AZUL</div>
+                        <div class="price">47.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="zapatilla">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/zapatillas/bullpadel_bakal.webp" alt=""></div>
+                            <div class="offer-label">-10%</div>
+                        </div>
+                        <div class="name">BULLPADEL BAKAL AZUL</div>
+                        <div class="price">47.98€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="zapatilla">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/zapatillas/asics_resolution.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">ASICS GEL RESOLUTION 9 AZUL</div>
+                        <div class="price">93.94€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="camiseta">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/camisetas/CAMISETA_ADIDAS_MEL.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">CAMISETA ADIDAS MEL</div>
+                        <div class="price">39.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="camiseta">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/camisetas/camiseta_babolat.webp" alt=""></div>
+                            <div class="offer-label">-25%</div>
+                        </div>
+                        <div class="name">CAMISETA BABOLAT</div>
+                        <div class="price">38.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="camiseta">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/camisetas/camiseta_bullpadel_mujer.webp" alt=""></div>
+                            <div class="offer-label">-30%</div>
+                        </div>
+                        <div class="name">CAMISETA BULLPADEL OLIN</div>
+                        <div class="price">16.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="camiseta">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/camisetas/CAMISETA_SIUX_DIABLO.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">CAMISETA SIUX DIABLO</div>
+                        <div class="price">34.94€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="camiseta">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/camisetas/POLO_ADIDAS_MEL.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">POLO ADIDAS MEL</div>
+                        <div class="price">41.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                    <div class="product" id="camiseta">
+                        <div class="offer">
+                            <div class="image"><img src="/assets/camisetas/camiseta_bullpadel_brete_mujer.webp" alt=""></div>
+                            <div></div>
+                        </div>
+                        <div class="name">CAMISETA BULLPADEL BRETE</div>
+                        <div class="price">47.95€</div>
+                        <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
+                    </div>
+                </section>
+            </section>
+            <section class="products-cart">
+                <div id="carrito" class="carrito">
+                    
                 </div>
-                <div class="name">NOX ML10 PRO CUP CORP</div>
-                <div class="price">79,94€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="pala">
-                <div class="offer">
-                    <div class="image"><img src="/assets/palas/bullpadel_vertex_03.webp" alt=""></div>
-                    <div class="offer-label">-15%</div>
+                <div id="total-cart" class="total-cart">
+
                 </div>
-                <div class="name">BULLPADEL VERTEX 03</div>
-                <div class="price">144,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="pala">
-                <div class="offer">
-                    <div class="image"><img src="/assets/palas/nox_ultimate_power.webp" alt=""></div>
-                    <div></div>
-                </div>
-                <div class="name">NOX ULTIMATE POWER LTD CARBON</div>
-                <div class="price">112,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="pala">
-                <div class="offer">
-                    <div class="image"><img src="/assets/palas/INTRUDER.webp" alt=""></div>
-                    <div class="offer-label">-50%</div>
-                </div>
-                <div class="name">ORYGEN INTRUDER</div>
-                <div class="price">15,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="pala">
-                <div class="image"><img src="/assets/palas/bullpadel_vertex_03_comfort.webp" alt=""></div>
-                <div class="name">BULLPADEL VERTEX 03 COMFORT</div>
-                <div class="price">98,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="pala">
-                <div class="image"><img src="/assets/palas/adidas_adipower_multiweight.webp" alt=""></div>
-                <div class="name">ADIDAS ADIPOWER MULTIWEIGHT</div>
-                <div class="price">158,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="zapatilla">
-                <div class="image"><img src="/assets/zapatillas/asics_pro_5_gris.webp" alt=""></div>
-                <div class="name">ASICS GEL PRO 5 GRIS</div>
-                <div class="price">47,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="zapatilla">
-                <div class="image"><img src="/assets/zapatillas/joma_negro.webp" alt=""></div>
-                <div class="name">JOMA T.SET NEGRO</div>
-                <div class="price">20,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="zapatilla">
-                <div class="image"><img src="/assets/zapatillas/asics_challenger_14.webp" alt=""></div>
-                <div class="name">ASICS GEL CHALLENGER 14</div>
-                <div class="price">84,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="zapatilla">
-                <div class="image"><img src="/assets/zapatillas/asics_pro_5_azul.webp" alt=""></div>
-                <div class="name">ASICS GEL PRO 5 AZUL</div>
-                <div class="price">47,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="zapatilla">
-                <div class="image"><img src="/assets/zapatillas/bullpadel_bakal.webp" alt=""></div>
-                <div class="name">BULLPADEL BAKAL AZUL</div>
-                <div class="price">47,98€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="zapatilla">
-                <div class="image"><img src="/assets/zapatillas/asics_resolution.webp" alt=""></div>
-                <div class="name">ASICS GEL RESOLUTION 9 AZUL</div>
-                <div class="price">93,94€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="camiseta">
-                <div class="image"><img src="/assets/camisetas/CAMISETA_ADIDAS_MEL.webp" alt=""></div>
-                <div class="name">CAMISETA ADIDAS MEL</div>
-                <div class="price">39,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="camiseta">
-                <div class="image"><img src="/assets/camisetas/camiseta_babolat.webp" alt=""></div>
-                <div class="name">CAMISETA BABOLAT</div>
-                <div class="price">38,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="camiseta">
-                <div class="image"><img src="/assets/camisetas/camiseta_bullpadel_mujer.webp" alt=""></div>
-                <div class="name">CAMISETA BULLPADEL OLIN</div>
-                <div class="price">16,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="camiseta">
-                <div class="image"><img src="/assets/camisetas/CAMISETA_SIUX_DIABLO.webp" alt=""></div>
-                <div class="name">CAMISETA SIUX DIABLO</div>
-                <div class="price">34,94€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="camiseta">
-                <div class="image"><img src="/assets/camisetas/POLO_ADIDAS_MEL.webp" alt=""></div>
-                <div class="name">POLO ADIDAS MEL</div>
-                <div class="price">41,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
-            <div class="product" id="camiseta">
-                <div class="image"><img src="/assets/camisetas/camiseta_bullpadel_brete_mujer.webp" alt=""></div>
-                <div class="name">CAMISETA BULLPADEL BRETE</div>
-                <div class="price">47,95€</div>
-                <div class="cart"><button type="button" class="cartButton">Añadir al carrito</button></div>
-            </div>
+            </section>
         </section>
     </main>
 </body>
+<script src="/src/script.js"></script>
 </html>
