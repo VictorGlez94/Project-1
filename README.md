@@ -8,7 +8,7 @@ Además de ser una tienda virtual, el sitio proporciona información valiosa a t
 
 A través de su sección "Sobre nosotros" y "Contáctanos", la empresa muestra transparencia y accesibilidad, permitiendo a los usuarios conocer más sobre su historia y ubicación, y proporcionando opciones para comunicarse directamente en caso de consultas o asistencia. 
 
-En resumen, "PadelFusion" es mucho más que una tienda en línea: es una comunidad dedicada a mejorar la experiencia de juego de cada jugador de pádel, desde principiantes hasta profesionales.
+En resumen, PadelFusion es mucho más que una tienda en línea: es una comunidad dedicada a mejorar la experiencia de juego de cada jugador de pádel, desde principiantes hasta profesionales.
 
 ## Secciones
 
