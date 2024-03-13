@@ -163,23 +163,6 @@ function addToCart(event) {
     const nombre = producto.querySelector('.name').textContent;
     const precio = parseFloat(producto.querySelector('.price').textContent.replace('€', ''));
 
-    // Verificar si el carrito está vacío
-    const carritoVacio = document.getElementById('carrito').childElementCount === 0;
-
-    if (carritoVacio == true) {
-        // Si el carrito está vacío, agregar una cabecera
-        const carrito = document.getElementById('carrito');
-        carrito.innerHTML = `
-            <div class="cabecera-carrito">
-                <div>Foto</div>
-                <div>Nombre</div>
-                <div>Unidades</div>
-                <div>Total</div>
-                <div>Eliminar</div>
-            </div>
-        `;
-    }
-
     // Verificar si el producto ya está en el carrito
     const productosEnCarrito = document.querySelectorAll('.producto-nombre');
     let productoExistente = null;
@@ -238,11 +221,13 @@ function eliminarProducto(event) {
         // Verificar si ya no hay productos en el carrito
         const productosEnCarrito = document.querySelectorAll('.producto-carrito');
         if (productosEnCarrito.length === 0) {
-            // Si no hay productos, ocultar el botón de pagar
-            const pagarButton = document.getElementById('final-button');
-            if (pagarButton) {
-                pagarButton.remove();
-            }
+            document.querySelector('.products-cart').classList.remove('show'); 
+            
+            const carrito = document.getElementById('carrito');
+            const botonPagarActual = carrito.querySelector('.final-button');
+            const totalActual = carrito.querySelector('.total-cart');
+            if (botonPagarActual) botonPagarActual.remove();
+            if (totalActual) totalActual.remove();
         }
     }
     updateBagNumber();
@@ -311,8 +296,15 @@ function pagar() {
 //Función para mostrar u ocultar el carrito
 var cartIcon = document.querySelector('.shopping-bag');
 cartIcon.addEventListener('click', function () {
-    var productsCart = document.querySelector('.products-cart');
-    productsCart.classList.toggle('show');
+    var products = parseInt(document.querySelector('.bag-number').textContent);
+    if (products === 0) {
+        document.querySelector('.products-cart').classList.remove('show');
+        console.log("si"); 
+    }
+    else {
+        document.querySelector('.products-cart').classList.toggle('show');
+        console.log("no"); 
+    }
  });
 
 
