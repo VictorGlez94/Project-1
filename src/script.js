@@ -222,6 +222,7 @@ function addToCart(event) {
     }
 
     mostrarTotalPagar();
+    updateBagNumber();
 }
 
 
@@ -234,6 +235,24 @@ function eliminarProducto(event) {
         const precioProductoEliminado = parseFloat(productoAEliminar.querySelector('.total').textContent.replace('€', ''));
         mostrarTotalPagar(-precioProductoEliminado);
     }
+    updateBagNumber();
+}
+
+// Función para actualizar el número en la bolsa de compras
+function updateBagNumber() {
+    var bagContainer = document.querySelector('.shopping-bag');
+    var bagNumberElement = bagContainer.querySelector('.bag-number');
+
+    var productosEnCarrito = document.querySelectorAll('.producto-carrito');
+
+    var totalUnidades = 0;
+
+    productosEnCarrito.forEach(function (producto) {
+        var cantidad = parseInt(producto.querySelector('.cantidad').textContent);
+        totalUnidades += cantidad;
+    });
+
+    bagNumberElement.textContent = totalUnidades;
 }
 
 
@@ -274,9 +293,20 @@ function mostrarTotalPagar(precio) {
     pagarButton.addEventListener('click', pagar);
 }
 
+//Función para mostrar un mensaje en pantalla al darle a pagar
 function pagar() {
     alert('¡Enhorabuena! ¡Se puede decir que eres muy friki del pádel!');
 }
+
+//Función para mostrar u ocultar el carrito
+var cartIcon = document.querySelector('.shopping-bag');
+cartIcon.addEventListener('click', function () {
+    var productsCart = document.querySelector('.products-cart');
+    productsCart.classList.toggle('show');
+ });
+
+
+
 
 
 

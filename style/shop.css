@@ -185,16 +185,28 @@ p {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    position: absolute;
+    top: 75px;
+    left: 81%;
+    background-color: white;
+    box-shadow: 0 20px 15px rgba(187, 182, 182, 0.911);
+    padding: 0 10px 20px 10px;
 }
 
 .cabecera-carrito{
     background-color: #0055879c;
     color: white;
-    padding: 0 10px 0 10px;
     margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
 }
 
-.cabecera-carrito,
+
 .producto-carrito {
     display: flex;
     align-items: center;
@@ -252,7 +264,7 @@ p {
     margin: 0 auto;
     width: 30%;
     height: 40px;
-    padding: 8px 28px; 
+    padding: 8px 28px 8px 28px; 
     border:solid #000000; 
     border-width: 1px;
     border-radius: 14px; 
@@ -260,7 +272,25 @@ p {
     font-weight: bold; 
     color:#ffffff; 
     background:#867d00;
-    cursor: pointer; 
+    cursor: pointer;
+    text-align: center;
+}
+
+.final-button {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 40px;
+    padding: 8px 28px 8px 28px;
+    border: solid #000000;
+    border-width: 1px;
+    border-radius: 14px;
+    font: 16px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    background: #867d00;
+    cursor: pointer;
+    text-align: center;
 }
 
 .offer {
