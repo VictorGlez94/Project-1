@@ -16,7 +16,6 @@ margin: none;
 }
 
 #contact-us > p{
-font-size: ;
 color: beige;
 }
 
@@ -30,7 +29,7 @@ color: beige;
     width: 100%;
     background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)), url(/assets/foto\ pelotas\ 1.jpg);
+                rgba(0, 0, 0, 0.5)), url(/assets/equipo-contact.jpg);
     background-size: cover;
     background-position: center;
     margin-top: none;
@@ -44,7 +43,8 @@ color: beige;
 }
 
 .paragrahps p {
-    background-color: rgb(213, 238, 230);
+    background-color: rgb(0, 255, 21);
+    opacity: 0.9;
     padding: 20px 20px;
     margin: 0;
     color: black;
@@ -55,7 +55,8 @@ color: beige;
 } 
 
 .form{
-    background-color: rgb(213, 238, 230);
+    background-color: rgb(0, 255, 21);
+    opacity: 0.9;
     padding: 20px 10px;
     margin: 0;
     color: rgb(0, 0, 0);
@@ -72,6 +73,12 @@ color: beige;
 .myInputs{
     text-align: justify;
 }
+
+.checkbox{
+width: 80%;
+text-align: left;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 600px) {
 
 
@@ -87,7 +94,7 @@ color: beige;
     }
 
         .paragrahps p {
-            background-color: rgb(213, 238, 230);
+            background-color: rgb(25, 189, 39);
             padding: 20px 20px;
             margin: 0;
 
