@@ -207,7 +207,7 @@ main {
     flex-direction: column;
     align-items: center;
     /* justify-content: flex-start; */
-    gap: 20px;
+    gap: 5px;
 }
 
 .slide {
@@ -238,11 +238,6 @@ main {
     cursor: pointer;
 }
 
-.description {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    text-align: center;
-}
 
 .shop-btn {
     margin-top: 20px;
@@ -300,10 +295,15 @@ main {
 
 }
 
-.blog-content > h2{
-    opacity: 1;
-    display: flex;
+.blog-landing-page h2 {
     text-align: center;
+    width: 40%;
+    background-color: #fdfdfdc5;
+}
+
+.blog-content h3{
+    text-align: center;
+    background-color: #ffeea2c5;
 }
 
 #post1 {
@@ -372,51 +372,45 @@ main {
 .aboutus-contactus-landing-page {
     background-image: url("../assets/picture-landingPage-contact-us.jpg");
     background-size: cover;
-    /* position: relative; */
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 800px;
-    /* gap: 10% */
-
+    gap: 2%;
 }
 
 .aboutus-contactus-landing-page > *{
     background-image: linear-gradient(to right, rgb(41, 202, 41), rgb(138, 161, 158));
-        border-radius: 5px;
-        width: 60%;
-        height: 60%;
-        padding: 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-}
-.test iframe{
-    /* background-color: aqua; */
-    border-radius: 5px;
-    width: 80%;
-    height: 400px;
-    justify-content: center;
-    border-color: #000000;
-    border-width: 5px;
-    border-style: dashed;
-
-}
-.test{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    
-}
-
-.about-contact-container{
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50%;
-    justify-content: space-between;
+    height: 80%;
+    
+        
+}
+iframe{
+    height: 60%;
+    justify-content: center;
+    width: 80%;
+}
+
+.test{
+    gap: 30px;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.about-contact-container{
+    align-items: center;
+    justify-content:flex-start;
+    margin-right: 5%;
+}
+
+.about-contact-container div{
+    margin: 5%
 }
 
 .about-contact-container>*:hover{
@@ -445,6 +439,13 @@ h2 {
     color: #096E11;
     text-align: center;
     -webkit-text-stroke: 1px rgb(19, 19, 19);
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
 }
 
 
