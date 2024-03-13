@@ -234,6 +234,16 @@ function eliminarProducto(event) {
         productoAEliminar.remove();
         const precioProductoEliminado = parseFloat(productoAEliminar.querySelector('.total').textContent.replace('€', ''));
         mostrarTotalPagar(-precioProductoEliminado);
+
+        // Verificar si ya no hay productos en el carrito
+        const productosEnCarrito = document.querySelectorAll('.producto-carrito');
+        if (productosEnCarrito.length === 0) {
+            // Si no hay productos, ocultar el botón de pagar
+            const pagarButton = document.getElementById('final-button');
+            if (pagarButton) {
+                pagarButton.remove();
+            }
+        }
     }
     updateBagNumber();
 }
@@ -267,7 +277,7 @@ function mostrarTotalPagar(precio) {
     });
 
     const totalPagarDiv = document.createElement('div');
-    totalPagarDiv.textContent = 'Total a Pagar: ' + totalPagar.toFixed(2) + ' €';
+    totalPagarDiv.textContent = 'Total a pagar: ' + totalPagar.toFixed(2) + ' €';
     totalPagarDiv.style.fontWeight = 'bold';
     totalPagarDiv.classList.add('total-cart');
 
