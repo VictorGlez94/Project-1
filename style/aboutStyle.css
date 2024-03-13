@@ -1,17 +1,17 @@
 /*ABOUT US*/
 
-main {
+main > * {
     box-sizing: border-box;
+    overflow: scroll;
+    
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
+
 }
 
 h1 {
