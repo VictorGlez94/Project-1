@@ -7,15 +7,14 @@ body {
 }
 
 
-#contact-us h2{
+.contact-us-container h2{
 font-size: 50px;
 color: beige;
 margin: none;
 
-
 }
 
-#contact-us > p{
+.contact-us-container > p{
 color: beige;
 }
 
@@ -32,9 +31,17 @@ color: beige;
                 rgba(0, 0, 0, 0.5)), url(/assets/equipo-contact.jpg);
     background-size: cover;
     background-position: center;
-    margin-top: none;
     }
 
+.contact-us-container{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        position: relative;
+        top: -8%;
+}
 
 .paragrahps {
     display: flex;
@@ -43,7 +50,7 @@ color: beige;
 }
 
 .paragrahps p {
-    background-color: rgb(0, 255, 21);
+    background-color: hsl(125, 68%, 62%);
     opacity: 0.9;
     padding: 20px 20px;
     margin: 0;
@@ -55,7 +62,7 @@ color: beige;
 } 
 
 .form{
-    background-color: rgb(0, 255, 21);
+    background-color: hsl(125, 68%, 62%);
     opacity: 0.9;
     padding: 20px 10px;
     margin: 0;

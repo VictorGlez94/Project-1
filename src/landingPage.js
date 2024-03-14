@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 const noticiaPadel1 = `
-¡Noticia de Última Hora!<br><br>
+<h3 style="color:white">¡Noticia de Última Hora!</h3><br><br>
         Juan Lebrón y Alejandro Galán, dos de los jugadores más destacados en el mundo del pádel, han tomado la decisión de separarse tras muchos años de asociación en las pistas. Esta sorprendente noticia ha conmocionado a la comunidad del pádel, ya que la pareja ha sido reconocida como una de las más exitosas en la historia de este deporte.<br><br>
         Lebrón y Galán, conocidos por su impecable coordinación y juego en equipo, han cosechado innumerables éxitos juntos, incluidos múltiples títulos de campeonatos nacionales e internacionales. Su extraordinaria habilidad en la cancha los ha llevado a lo más alto del ranking mundial y los ha convertido en referentes indiscutibles en el mundo del pádel.<br><br>
         Sin embargo, a pesar de su impresionante historial de victorias y logros compartidos, ambos jugadores han decidido tomar caminos separados en sus carreras deportivas. Aunque las razones detrás de esta separación no han sido reveladas públicamente, se especula que podría deberse a diferencias en la estrategia de juego o en los objetivos personales de cada uno.<br><br>
@@ -48,14 +48,14 @@ const noticiaPadel1 = `
         ¡Permanece atento a las próximas actualizaciones sobre esta sorprendente separación y sus implicaciones en el emocionante mundo del pádel!
 `;
 const noticiaPadel2=`
-Entrenamientos Virtuales<br><br>
+<h3 style="color:white">Entrenamientos Virtuales</h3><br><br>
         En una era marcada por la tecnología, el mundo del pádel no se queda atrás. Una nueva tendencia está emergiendo en la comunidad de jugadores de pádel: los entrenamientos virtuales. Con la creciente popularidad de las plataformas de videoconferencia y el acceso a tecnologías de seguimiento de movimiento, los jugadores ahora pueden mejorar su juego desde la comodidad de sus hogares.<br><br>
         Los entrenamientos virtuales ofrecen una variedad de ventajas, desde la conveniencia de ajustar el horario de entrenamiento según las necesidades personales hasta la posibilidad de recibir instrucción personalizada de entrenadores de élite en cualquier parte del mundo. Además, estas sesiones permiten a los jugadores analizar su técnica de juego con mayor detalle, gracias a herramientas de reproducción de video y retroalimentación en tiempo real.<br><br>
         Esta innovadora forma de entrenamiento está ganando rápidamente popularidad entre jugadores de todos los niveles, desde principiantes hasta profesionales. Los clubes de pádel y academias están adaptando sus programas de entrenamiento para incluir sesiones virtuales, y muchos jugadores están descubriendo que esta modalidad les brinda una nueva perspectiva y enfoque para mejorar su rendimiento en la cancha.<br><br>
         Si bien los entrenamientos virtuales pueden no reemplazar completamente la experiencia de jugar en una pista real, representan un paso emocionante hacia adelante en la evolución del pádel como deporte. ¡Prepárate para ver más jugadores adoptando esta tecnología y llevando su juego al siguiente nivel!
 `
 const noticiaPadel3 = `
-Descubre a Teresa Pérez Alonso: La Nueva Promesa del Pádel Femenino<br><br>
+<h3 style="color:white">Descubre a Teresa Pérez Alonso: La Nueva Promesa del Pádel Femenino</h3><br><br>
         El mundo del pádel femenino tiene una nueva estrella en ascenso: Teresa Pérez Alonso, una joven de Cruz del Señor, Tenerife, que está cautivando a todos con su talento y dedicación. A pesar de su corta edad, Teresa ha demostrado una progresión impresionante en el mundo del pádel, destacando por su habilidad en la cancha y su enfoque determinado en cada partido.<br><br>
         Desde sus primeros pasos en el pádel, Teresa ha mostrado un potencial excepcional, captando la atención de entrenadores y aficionados por igual. Su precoz trayectoria ha estado marcada por una serie de victorias y destacadas actuaciones en torneos locales y regionales, donde ha dejado una impresión duradera con su estilo de juego agresivo y su capacidad para adaptarse a cualquier situación en la cancha.<br><br>
         A pesar de su juventud, Teresa Pérez Alonso está decidida a alcanzar nuevas alturas en el mundo del pádel femenino. Con un entrenamiento riguroso y el apoyo de su familia y equipo, se está preparando para competir en el escenario nacional e internacional, donde espera dejar su marca como una de las mejores jugadoras del circuito.<br><br>
@@ -63,6 +63,8 @@ Descubre a Teresa Pérez Alonso: La Nueva Promesa del Pádel Femenino<br><br>
 `
 const blogMessages = [noticiaPadel1, noticiaPadel2, 
                         noticiaPadel3]
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const blogPost = document.querySelectorAll(".blog-post");

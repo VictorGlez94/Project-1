@@ -6,20 +6,16 @@ body {
     flex-direction: column;
     font-family: 'Quicksand',
         sans-serif;
-    /*to be implemented*/
 }
 
 
 main {
     width: 100%;
     height: 100%;
-    /* overflow: scroll; */
 }
 
 
 .navbar {
-    /* position: fixed;
-    z-index: 500; */
     width: 100%;
     margin: 0px;
     height: calc(50px + 1.5vw);
@@ -46,7 +42,7 @@ main {
     align-items: center;
 }
 
-.tabs > a {
+.tabs>a {
     color: #fff;
     font-size: 15px;
     text-decoration: none;
@@ -73,10 +69,7 @@ main {
     justify-content: center;
     margin-bottom: 5px;
     margin-left: 10px;
-    /* margin-bottom: 17px; */
-    /* border-right: 0; */
     cursor: pointer;
-    /* transform: scale(1); */
     border: none;
 
 }
@@ -86,24 +79,15 @@ main {
     background-color: #b4bd61;
     border-radius: 50%;
     margin-top: 5px;
-    /* margin-top: -61px; */
-    /* margin-right: 10px; */
     border-right: 0;
     font-size: small;
     font-weight: bolder;
-    /* transform: scale(1); */
     width: 20px;
     height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* .cart-icon {
-    margin: 0px 40px 25px 20px;
-    border-right: 0;
-    transform: scale(1);
-} */
 
 
 .options-navbar {
@@ -143,6 +127,7 @@ main {
     border-radius: 10px;
     text-align: center;
     width: 80%;
+    border: 3px solid rgb(84, 197, 112);
 }
 
 
@@ -191,7 +176,6 @@ main {
 
 .title-shop-landing-page {
     font-size: 2.5em;
-    /* color: #000000; */
     margin-bottom: 20px;
     background-color: rgb(22, 192, 79);
     color: #fff;
@@ -217,6 +201,7 @@ main {
     border-radius: 10px;
     text-align: center;
     align-items: center;
+    border: 3px solid rgb(84, 197, 112);
 }
 
 .goto-shop p {
@@ -247,6 +232,7 @@ main {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgb(84, 197, 112);
 }
 
 .slide img {
@@ -263,6 +249,7 @@ main {
     gap: 30px;
     background-color: rgb(22, 192, 79);
     border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
 }
 
 .contBtnsStyle>* {
@@ -282,12 +269,13 @@ main {
 .shop-btn {
     margin-top: 20px;
     padding: 10px 20px;
-            background-color: rgb(22, 192, 79);
+    background-color: rgb(22, 192, 79);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    border: 1px solid beige;
 
 
 
@@ -317,7 +305,6 @@ main {
 
 .blogs-title-landing-page {
     font-size: 2.5em;
-    /* color: #000000; */
     margin-bottom: 20px;
     background-color: rgb(22, 192, 79);
     color: #fff;
@@ -344,26 +331,26 @@ main {
     flex-direction: column;
     align-items: center;
     border-radius: 5%;
-
+    border: 3px solid beige;
 }
 
 .blog-landing-page h2 {
     font-size: 2.5em;
-        /* color: #000000; */
-        margin-bottom: 20px;
-        background-color: rgb(22, 192, 79);
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        padding: 3px;
+    margin-bottom: 20px;
+    background-color: rgb(22, 192, 79);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 3px;
 }
 
 .blog-content h3 {
     opacity: 1;
     display: flex;
     text-align: center;
-    background-color: #ffeea2c5;
+    justify-content: center;
+    padding: 0 10px 0 10px;
 }
 
 #post1 {
@@ -387,8 +374,11 @@ main {
     font-weight: bold;
     color: #000000;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    background-color: #ffeea2c5;
+    background-size: cover;
 }
 
 .blog-post:hover {
@@ -443,9 +433,6 @@ main {
 }
 
 .aboutus-contactus-landing-page>* {
-    /* background-image: linear-gradient(to right, rgb(209, 226, 55), rgb(9, 148, 21)); */
-     
-    /* background-image: linear-gradient(to right, rgb(41, 202, 41), rgb(138, 161, 158)); */
     border-radius: 5px;
     width: 60%;
     height: 60%;
@@ -455,13 +442,14 @@ main {
     align-items: center;
 }
 
-.map-container{
+.map-container {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .test iframe {
     border-radius: 5px;
     width: 80%;
@@ -479,11 +467,10 @@ main {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     text-align: center;
-    /* text-decoration: underline; */
 
 }
 
-.test h3{
+.test h3 {
     text-decoration: underline;
 }
 
@@ -491,14 +478,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-start;
-    /* margin-right: 5%; */
+    justify-content: flex-start;
     width: 40%;
 }
 
-/* .about-contact-container div{
-    margin: 5%
-} */
+
 
 .about-contact-container>*:hover {
     scale: calc(1.05);
@@ -533,7 +517,7 @@ h3 {
 
 .about-contact-container>*>p>a {
     /* background-color: rgb(22, 192, 79); */
-    color: hsl(125, 85%, 23%);;
+    color: hsl(125, 85%, 23%);
     text-decoration: none;
     /* border-radius: 5px; */
     font-weight: bold;
@@ -544,13 +528,13 @@ h3 {
 /*
 //////////////////////////////////END LAST PAGE//////////////////////////////////
 */
-
+/* 
 @media(min-width: 0px) and (max-width: 600px) {
     .sidebar .other-links {
         display: none;
     }
 
-        .slider {
-            display: none;
-        }
-}
+    .slider {
+        display: none;
+    }
+} */

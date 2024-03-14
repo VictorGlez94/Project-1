@@ -29,66 +29,71 @@
 
     <main>
         <div id="contact-us">
-            <h2>¡Contáctanos!</h2>
-            <p>¿Tienes alguna pregunta? ¡Aquí estamos para ayudarte!</p>
-            <div class="paragrahps">
-                <p><b> Email: </b> <br>contact@padel-fusion.com</p>
-                <p><b>Teléfono de contacto:</b> <br> 123 456 789.</p>
-                <p><b>Dirección: </b> <br> C/Las Torres, 24</p>
-                <p><b>Horario: </b> <br> Lunes a viernes de 9:00 a.m - 20:00 p.m</p>
         
-            </div>
-            <p><b>Si lo prefieres, puedes ponerte en contacto con nosotros a través del siguiente formulario: </b><br> <br>
-            </p>
+            <div class="contact-us-container">
         
-            <div class="form">
-                <form onsubmit="return validarFormulario();" action="" method="post">
+                <h2>¡Contáctanos!</h2>
+                <p>¿Tienes alguna pregunta? ¡Aquí estamos para ayudarte!</p>
+                <div class="paragrahps">
+                    <p><b> Email: </b> <br>contact@padel-fusion.com</p>
+                    <p><b>Teléfono de contacto:</b> <br> 123 456 789.</p>
+                    <p><b>Dirección: </b> <br> C/Las Torres, 24</p>
+                    <p><b>Horario: </b> <br> Lunes a viernes de 9:00 a.m - 20:00 p.m</p>
         
-                    <div class="title">
-                        <p>Formulario de contacto</p>
-                    </div>
+                </div>
+                <p><b>Si lo prefieres, puedes ponerte en contacto con nosotros a través del siguiente formulario: </b><br> <br>
+                </p>
         
-                    <div class="myInputs">
-                        <label for="Asunto">Asunto:</label> <br>
-                        <select name="Asunto" required>
-                            <option value=""></option>
-                            <option value="Customer Support">Atención al cliente</option>
-                            <option value="Post-sales Service">Servicio post-venta</option>
-                        </select>
-                    </div> <br>
+                <div class="form">
+                    <form onsubmit="return validarFormulario();" action="" method="post">
         
-                    <div class="myInputs">
-                        <label for="email">Email: </label> <br>
-                        <input type="email" name="email" id="email" required />
-                    </div> <br>
+                        <div class="title">
+                            <p>Formulario de contacto</p>
+                        </div>
         
-                    <div class="myInputs">
-                        <label for="asunto">Indícanos en qué podemos ayudarte: </label> <br>
-                        <textarea name="asunto" oninput="autoresize(this)" style="min-width: 400px; height: 90px;"
-                            required></textarea>
-                    </div> <br>
+                        <div class="myInputs">
+                            <label for="Asunto">Asunto:</label> <br>
+                            <select name="Asunto" required>
+                                <option value=""></option>
+                                <option value="Customer Support">Atención al cliente</option>
+                                <option value="Post-sales Service">Servicio post-venta</option>
+                            </select>
+                        </div> <br>
         
-                    <div class="myInputs">
-                        <input type="submit" value="Enviar formulario" />
-                    </div> <br>
+                        <div class="myInputs">
+                            <label for="email">Email: </label> <br>
+                            <input type="email" name="email" id="email" required />
+                        </div> <br>
         
-                    <div class="checkbox">
-                        <input type="checkbox" name="agreement" id="checkbox" required />
-                        Estoy de acuerdo con los términos y condiciones
-                    </div>
+                        <div class="myInputs">
+                            <label for="asunto">Indícanos en qué podemos ayudarte: </label> <br>
+                            <textarea name="asunto" oninput="autoresize(this)" style="min-width: 400px; height: 90px;"
+                                required></textarea>
+                        </div> <br>
         
-                </form>
+                        <div class="myInputs">
+                            <input type="submit" value="Enviar formulario" />
+                        </div> <br>
         
-                <script>
-                    function validarFormulario() {
-                        // Realiza tus validaciones aquí
-                        event.preventDefault();
-                        window.location.reload();
-                        alert("Formulario enviado correctamente");
-                        return true; // Cambiar a true si deseas permitir el envío del formulario
-                    }
-                </script>
+                        <div class="checkbox">
+                            <input type="checkbox" name="agreement" id="checkbox" required />
+                            Estoy de acuerdo con los términos y condiciones
+                        </div>
         
+                    </form>
+        
+                    <script>
+                        function validarFormulario() {
+                            // Realiza tus validaciones aquí
+                            event.preventDefault();
+                            window.location.reload();
+                            alert("Formulario enviado correctamente");
+                            return true; // Cambiar a true si deseas permitir el envío del formulario
+                        }
+                    </script>
+        
+        
+                </div>
         
             </div>
         </div>
